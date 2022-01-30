@@ -9,29 +9,14 @@ pipeline {
         sh 'chmod +x ./scripts/*'
       }
     }
-    stage('Clean') {
-      steps {
-        sh './scripts/clean.sh'
-      }
-    }
-    stage('Build') {
-      steps {
-        sh './scripts/build.sh'
-      }
-    }
     stage('Login') {
       steps {
         sh './scripts/login.sh'
       }
     }
-    stage('Push') {
+    stage('Pull') {
       steps {
-        sh './scripts/push.sh'
-      }
-    }
-    stage('Test'){
-      steps {
-        sh './scripts/test_run.sh'
+        sh './scripts/pull.sh'
       }
     }
     stage('Logout') {
