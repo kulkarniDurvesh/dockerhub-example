@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo -tty rm -rf /home/exam
-sudo -tty mkdir /home/exam
-cd /home/exam
+
+mkdir /home/test1/Documents/exam
+cd /home/test1/Documents/exam
 git clone https://github.com/kulkarniDurvesh/devops-210940120097-.git
 cd ./devops-210940120097
 javac program.java
